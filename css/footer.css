@@ -1,0 +1,33 @@
+footer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.keyboard-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #d3d6da;
+  background-color: #d3d6da;
+  width: 60px;
+  height: 60px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.backspace {
+  padding: 0px 18px 0px 18px;
+}
+.enter {
+  padding: 0px 18px 0px 18px;
+}
