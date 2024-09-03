@@ -1,5 +1,3 @@
-const answer = "CONAN";
-
 let attempts = 0;
 let index = 0;
 let timer;
@@ -35,9 +33,14 @@ function appStart() {
     }
     if (index !== 0) index -= 1;
   };
-  const handleEnterKey = () => {
+  const handleEnterKey = async () => {
     //정답확인 로직
     let successCount = 0;
+    const response = await fetch("/answer");
+    const answer = await response.json(); //javascript object notation
+
+    console.log(answer);
+
     for (let i = 0; i < 5; i++) {
       const block = document.querySelector(
         `.board-block[data-index='${attempts}${i}']`
